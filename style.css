@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+box-sizing: border-box;
+color: rgb(71, 71, 71);
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+
+}
+
+.top-header{
+    /* border: 1px solid red; */
+display: flex;
+justify-content: space-between;
+}
+.top-header .company-logo img{
+    height: 100px;
+    margin-left: 40px;
+}
+.right-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+}
+.right-menu .search-input{
+    position: relative;
+    height: 25px;
+    padding: 20px 40px 20px 20px;
+    border: 1px solid #dcdcdc;
+    outline: none;
+    border-radius: 10px;
+     background: url();
+}
+.search-input .search-icon{
+    position: absolute;
+    margin-right: 30px;
+}
+.menu ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu ul li{
+    margin-right: 35px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+.menu ul li i{
+    font-size: 25px;
+    color: rgb(70, 70, 70);
+}
+.menu ul li:nth-child(1) a i{
+font-size: 35px;
+}
+.menu ul li:nth-child(1) a span {
+    display: flex;
+    align-items: center;
+}
+.menu ul li:nth-child(1) a .wallet-amount{
+    border: 1px solid red;
+    position: absolute;
+    margin-left: 30px;
+    margin-top: -10px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(255, 0, 0);
+    padding: 2px 2px;
+}
+.menu ul li:nth-child(2) a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li:nth-child(2) a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li:nth-child(3) a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li:nth-child(3) a .cart-amount{
+    border: 1px solid red;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: -10px;
+    color: white;
+    border-radius: 10px;
+    background-color: red;
+    padding: 2px 2px;
+}
+.menu ul li:nth-child(4) a span {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.menu ul li:nth-child(5) a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-header{
+    border-bottom: 1px solid #dcdcdc;
+}
+
+/* sub header */
+.sub-header{
+box-shadow: #dcdcdc 0px 5px 15px 0px;
+}
+.sub-header-menu{
+    margin-left: 40px;
+}
+.sub-header .sub-header-menu ul {
+    display: flex;
+    list-style: none;
+}
+.sub-header-menu ul li{
+    margin-right: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+.sub-header-menu ul li :hover{
+    color: blue;
+}
+
+/* carousel */
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+  }
+  .mySlides img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/* gift section */
+.gift-section{
+    /* border: 1px solid red; */
+}
+.gift-section-cards{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.gift-section-cards h1{
+    margin-top: 40px;
+    color: black;
+    margin-bottom: 20px;
+}
+.gift-section-cards .gifts-section-cards-items ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.gifts-section-cards-items ul li{
+    margin-right: 20px;
+}
+.gifts-section-cards-items ul li:nth-child(n){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.gifts-section-cards-items ul li:nth-child(n) h3{
+    margin-top: 20px;
+}
+
+/* propose section */
+.propose-section{
+    /* border: 1px solid red; */
+    background-color: #f4f7fc;
+}
+.propose-section-cards{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.propose-section-cards h1{
+    /* border: 1px solid black; */
+    top: 100px;
+    color: black;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+.propose-section-cards p{
+    /* border: 1px solid black; */
+  margin-bottom: 20px;
+}
+.propose-section-cards .propose-section-cards-items ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.propose-section-cards-items ul li{
+    margin-right: 20px;
+    transition: 0s transform ease-in;
+}
+.propose-section-cards-items ul li:hover{
+    border: 1px solid red;
+transform: scale(1.04);
+transition-duration:0.5s;
+
+}
+.propose-section-cards-items ul li:nth-child(n){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.propose-section-cards-items ul li:nth-child(n) h3{
+    margin-top: 20px;
+}
+
+/* popular section */
+.popular-section{
+    /* border: 1px solid red; */
+    background-color: #fc7552;
+}
+.popular-section-cards{
+    margin-top: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.popular-section-cards h1{
+    /* border: 1px solid black; */
+    top: 100px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+.popular-section-cards p{
+    /* border: 1px solid black; */
+  margin-bottom: 20px;
+  color: white;
+}
+.popular-section-cards .popular-section-cards-items ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.popular-section-cards-items ul li{
+    margin-right: 20px;
+    transition: 0s transform ease-in;
+}
+/* .popular-section-cards-items ul li:hover{
+    border: 1px solid red;
+transform: scale(1.04);
+transition-duration:0.5s;
+
+} */
+.popular-section-cards-items ul li:nth-child(n){
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.popular-section-cards-items ul li:nth-child(n) h3{
+    margin-top: 20px;
+}
+
+/* send-flowers */
+.send-flowers{
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 55px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 10px;
+    box-shadow: #dcdcdc 0px 0px 20px 5px;
+}
+.send-flowers h1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.send-flowers-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+.send-flowers-cards h3{
+    margin-top: 15px;
+}
+.send-flowers-cards div{
+border-radius: 10px;
+padding: 10px 10px;
+    /* border: 1px solid red; */
+}
+.send-flowers-cards div :hover {
+    border: 1px solid rgba(255, 0, 0, 0.705);
+}
